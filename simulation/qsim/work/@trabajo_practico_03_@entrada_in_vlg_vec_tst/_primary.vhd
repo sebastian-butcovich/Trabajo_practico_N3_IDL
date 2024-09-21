@@ -1,0 +1,4 @@
+library verilog;
+use verilog.vl_types.all;
+entity Trabajo_practico_03_Entrada_in_vlg_vec_tst is
+end Trabajo_practico_03_Entrada_in_vlg_vec_tst;

@@ -1,51 +1,196 @@
-|Trabajo_practico_03_Entrada_in
-pin_name1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-clk => inst3.CLK
-clk => inst11.CLK
-clk => inst7.CLK
-clk => inst4.CLK
-clk => inst5.CLK
-clk => inst2.CLK
-clk => inst10.CLK
-clk => inst8.CLK
-clk => inst9.CLK
-clk => inst6.CLK
-clk => inst1.CLK
+|Paralele_serie_16bits
+Salida <= Component_paralele_serie:inst17.Q
+Dato[0] => Component_paralele_serie:inst17.Data
+Dato[1] => Component_paralele_serie:inst16.Data
+Dato[2] => Component_paralele_serie:inst15.Data
+Dato[3] => Component_paralele_serie:inst14.Data
+Dato[4] => Component_paralele_serie:inst13.Data
+Dato[5] => Component_paralele_serie:inst12.Data
+Dato[6] => Component_paralele_serie:inst11.Data
+Dato[7] => Component_paralele_serie:inst10.Data
+Dato[8] => Component_paralele_serie:inst6.Data
+Dato[9] => Component_paralele_serie:inst7.Data
+Dato[10] => Component_paralele_serie:inst8.Data
+Dato[11] => Component_paralele_serie:inst9.Data
+Dato[12] => Component_paralele_serie:inst5.Data
+Dato[13] => Component_paralele_serie:inst4.Data
+Dato[14] => Component_paralele_serie:inst3.Data
+Dato[15] => Component_paralele_serie:inst_1.Data
+SHL => Component_paralele_serie:inst17.SH/DL
+SHL => Component_paralele_serie:inst16.SH/DL
+SHL => Component_paralele_serie:inst15.SH/DL
+SHL => Component_paralele_serie:inst14.SH/DL
+SHL => Component_paralele_serie:inst13.SH/DL
+SHL => Component_paralele_serie:inst12.SH/DL
+SHL => Component_paralele_serie:inst11.SH/DL
+SHL => Component_paralele_serie:inst10.SH/DL
+SHL => Component_paralele_serie:inst6.SH/DL
+SHL => Component_paralele_serie:inst7.SH/DL
+SHL => Component_paralele_serie:inst8.SH/DL
+SHL => Component_paralele_serie:inst9.SH/DL
+SHL => Component_paralele_serie:inst5.SH/DL
+SHL => Component_paralele_serie:inst4.SH/DL
+SHL => Component_paralele_serie:inst3.SH/DL
+SHL => Component_paralele_serie:inst_1.SH/DL
+ClK => Component_paralele_serie:inst_1.clk
+ClK => Component_paralele_serie:inst3.clk
+ClK => Component_paralele_serie:inst4.clk
+ClK => Component_paralele_serie:inst5.clk
+ClK => Component_paralele_serie:inst9.clk
+ClK => Component_paralele_serie:inst8.clk
+ClK => Component_paralele_serie:inst7.clk
+ClK => Component_paralele_serie:inst6.clk
+ClK => Component_paralele_serie:inst10.clk
+ClK => Component_paralele_serie:inst11.clk
+ClK => Component_paralele_serie:inst12.clk
+ClK => Component_paralele_serie:inst13.clk
+ClK => Component_paralele_serie:inst14.clk
+ClK => Component_paralele_serie:inst15.clk
+ClK => Component_paralele_serie:inst16.clk
+ClK => Component_paralele_serie:inst17.clk
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst17
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
 clk => inst.CLK
-clk => inst12.CLK
-clk => inst13.CLK
-clk => inst14.CLK
-clk => inst15.CLK
-d[0] => inst.DATAIN
-d[1] => inst1.DATAIN
-d[2] => inst6.DATAIN
-d[3] => inst9.DATAIN
-d[4] => inst8.DATAIN
-d[5] => inst10.DATAIN
-d[6] => inst2.DATAIN
-d[7] => inst3.DATAIN
-d[8] => inst11.DATAIN
-d[9] => inst7.DATAIN
-d[10] => inst4.DATAIN
-d[11] => inst5.DATAIN
-d[12] => inst12.DATAIN
-d[13] => inst13.DATAIN
-d[14] => inst14.DATAIN
-d[15] => inst15.DATAIN
-pin_name2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-pin_name3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-pin_name4 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-pin_name5 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-pin_name6 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-pin_name7 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-pin_name8 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-pin_name9 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-pin_name10 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-pin_name11 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-pin_name12 <= inst.DB_MAX_OUTPUT_PORT_TYPE
-pin_name15 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-pin_name16 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-pin_name17 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-pin_name18 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst16
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst15
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst14
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst13
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst12
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst11
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst10
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst6
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst7
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst8
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst9
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst5
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst4
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst3
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
+
+
+|Paralele_serie_16bits|Component_paralele_serie:inst_1
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+SH/DL => inst2.IN0
+SH/DL => inst5.IN0
+SER_IN => inst2.IN1
+Data => inst3.IN0
 
 

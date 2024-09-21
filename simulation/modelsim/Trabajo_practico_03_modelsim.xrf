@@ -1,6 +1,9 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/seba-/Documents/Año 2024/Primer cuatrimestre/Introducción_al_diseño_lógico/Queartus_workspace_TP2/Trabajo_practico_03_Entrada_in.bdf
-source_file = 1, C:/Users/seba-/Documents/Año 2024/Primer cuatrimestre/Introducción_al_diseño_lógico/Queartus_workspace_TP2/db/Trabajo_practico_03.cbx.xml
+source_file = 1, C:/Users/seba-/Documents/Queartus_workspace_TP2/Trabajo_practico_03_Entrada_in.bdf
+source_file = 1, C:/Users/seba-/Documents/Queartus_workspace_TP2/Test_Entrada.vwf
+source_file = 1, ../../../../Test_Entrada.vwf
+source_file = 1, ../../../../Test.vwf
+source_file = 1, C:/Users/seba-/Documents/Queartus_workspace_TP2/db/Trabajo_practico_03.cbx.xml
 design_name = Trabajo_practico_03_Entrada_in
 instance = comp, \pin_name1~output\, pin_name1~output, Trabajo_practico_03_Entrada_in, 1
 instance = comp, \pin_name2~output\, pin_name2~output, Trabajo_practico_03_Entrada_in, 1
