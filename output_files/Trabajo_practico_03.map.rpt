@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Trabajo_practico_03
-Fri Sep 20 14:05:03 2024
+Tue Sep 24 11:09:49 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 20 14:05:03 2024      ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 24 11:09:49 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Trabajo_practico_03                        ;
-; Top-level Entity Name              ; Paralele_serie_16bits                      ;
+; Top-level Entity Name              ; Maquina_de_estado_TP2                      ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 16                                         ;
-;     Total combinational functions  ; 16                                         ;
-;     Dedicated logic registers      ; 16                                         ;
-; Total registers                    ; 16                                         ;
-; Total pins                         ; 19                                         ;
+; Total logic elements               ; 2                                          ;
+;     Total combinational functions  ; 2                                          ;
+;     Dedicated logic registers      ; 2                                          ;
+; Total registers                    ; 2                                          ;
+; Total pins                         ; 4                                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+-----------------------+---------------------+
 ; Option                                                                     ; Setting               ; Default Value       ;
 +----------------------------------------------------------------------------+-----------------------+---------------------+
-; Top-level entity name                                                      ; Paralele_serie_16bits ; Trabajo_practico_03 ;
+; Top-level entity name                                                      ; Maquina_de_estado_TP2 ; Trabajo_practico_03 ;
 ; Family name                                                                ; Cyclone IV GX         ; Cyclone IV GX       ;
 ; Use smart compilation                                                      ; Off                   ; Off                 ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                    ; On                  ;
@@ -159,14 +159,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; Component_paralele_serie.bdf     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/seba-/Documents/Queartus_workspace_TP2/Component_paralele_serie.bdf ;         ;
-; Paralele_serie_16bits.bdf        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/seba-/Documents/Queartus_workspace_TP2/Paralele_serie_16bits.bdf    ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; Maquina_de_estado_TP2.bdf        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/seba-/Documents/Queartus_workspace_TP2/Maquina_de_estado_TP2.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -174,38 +173,22 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 19               ;
+; I/O pins                 ; 4                ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; SHL~input        ;
-; Maximum fan-out          ; 16               ;
-; Total fan-out            ; 99               ;
-; Average fan-out          ; 1.41             ;
+; Maximum fan-out node     ; inst             ;
+; Maximum fan-out          ; 3                ;
+; Total fan-out            ; 16               ;
+; Average fan-out          ; 1.33             ;
 +--------------------------+------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
-+--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------+--------------+
-; Compilation Hierarchy Node           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Library Name ;
-+--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------+--------------+
-; |Paralele_serie_16bits               ; 16 (0)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 19   ; 0            ; |Paralele_serie_16bits                                 ; work         ;
-;    |Component_paralele_serie:inst10| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst10 ; work         ;
-;    |Component_paralele_serie:inst11| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst11 ; work         ;
-;    |Component_paralele_serie:inst12| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst12 ; work         ;
-;    |Component_paralele_serie:inst13| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst13 ; work         ;
-;    |Component_paralele_serie:inst14| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst14 ; work         ;
-;    |Component_paralele_serie:inst15| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst15 ; work         ;
-;    |Component_paralele_serie:inst16| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst16 ; work         ;
-;    |Component_paralele_serie:inst17| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst17 ; work         ;
-;    |Component_paralele_serie:inst3|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst3  ; work         ;
-;    |Component_paralele_serie:inst4|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst4  ; work         ;
-;    |Component_paralele_serie:inst5|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst5  ; work         ;
-;    |Component_paralele_serie:inst6|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst6  ; work         ;
-;    |Component_paralele_serie:inst7|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst7  ; work         ;
-;    |Component_paralele_serie:inst8|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst8  ; work         ;
-;    |Component_paralele_serie:inst9|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst9  ; work         ;
-;    |Component_paralele_serie:inst_1| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Paralele_serie_16bits|Component_paralele_serie:inst_1 ; work         ;
-+--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------+--------------+
+; |Maquina_de_estado_TP2     ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 4    ; 0            ; |Maquina_de_estado_TP2 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -214,7 +197,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16    ;
+; Total registers                              ; 2     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -239,7 +222,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Sep 20 14:05:02 2024
+    Info: Processing started: Tue Sep 24 11:09:48 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Trabajo_practico_03 -c Trabajo_practico_03
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file trabajo_practico_03_entrada_in.bdf
@@ -248,18 +231,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file compone
     Info (12023): Found entity 1: Component_paralele_serie
 Info (12021): Found 1 design units, including 1 entities, in source file paralele_serie_16bits.bdf
     Info (12023): Found entity 1: Paralele_serie_16bits
-Info (12127): Elaborating entity "Paralele_serie_16bits" for the top level hierarchy
-Info (12128): Elaborating entity "Component_paralele_serie" for hierarchy "Component_paralele_serie:inst17"
+Info (12021): Found 1 design units, including 1 entities, in source file maquina_de_estado_tp2.bdf
+    Info (12023): Found entity 1: Maquina_de_estado_TP2
+Info (12127): Elaborating entity "Maquina_de_estado_TP2" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 18 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 16 logic cells
+Info (21057): Implemented 6 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 2 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4677 megabytes
-    Info: Processing ended: Fri Sep 20 14:05:03 2024
+    Info: Peak virtual memory: 4669 megabytes
+    Info: Processing ended: Tue Sep 24 11:09:49 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

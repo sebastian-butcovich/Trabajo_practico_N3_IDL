@@ -2,20 +2,20 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Paralele_serie_16bits
+# -- Compiling module Maquina_de_estado_TP2
 # 
 # Top level modules:
-# 	Paralele_serie_16bits
+# 	Maquina_de_estado_TP2
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Paralele_serie_16bits_vlg_sample_tst
-# -- Compiling module Paralele_serie_16bits_vlg_check_tst
-# -- Compiling module Paralele_serie_16bits_vlg_vec_tst
+# -- Compiling module Maquina_de_estado_TP2_vlg_sample_tst
+# -- Compiling module Maquina_de_estado_TP2_vlg_check_tst
+# -- Compiling module Maquina_de_estado_TP2_vlg_vec_tst
 # 
 # Top level modules:
-# 	Paralele_serie_16bits_vlg_vec_tst
-# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.Paralele_serie_16bits_vlg_vec_tst 
-# Loading work.Paralele_serie_16bits_vlg_vec_tst
-# Loading work.Paralele_serie_16bits
+# 	Maquina_de_estado_TP2_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.Maquina_de_estado_TP2_vlg_vec_tst 
+# Loading work.Maquina_de_estado_TP2_vlg_vec_tst
+# Loading work.Maquina_de_estado_TP2
 # Loading cycloneiv_ver.cycloneiv_io_obuf
 # Loading cycloneiv_ver.cycloneiv_io_ibuf
 # Loading cycloneiv_ver.cycloneiv_clkctrl
@@ -23,9 +23,9 @@
 # Loading cycloneiv_ver.cycloneiv_ena_reg
 # Loading cycloneiv_ver.cycloneiv_lcell_comb
 # Loading altera_ver.dffeas
-# Loading work.Paralele_serie_16bits_vlg_sample_tst
-# Loading work.Paralele_serie_16bits_vlg_check_tst
+# Loading work.Maquina_de_estado_TP2_vlg_sample_tst
+# Loading work.Maquina_de_estado_TP2_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : Test_paralele_serie_16_bits.vwf.vt(152)
-#    Time: 1 us  Iteration: 0  Instance: /Paralele_serie_16bits_vlg_vec_tst/tb_out
+# ** Note: $finish    : Test_Maquina_Estado.vwf.vt(177)
+#    Time: 1 us  Iteration: 0  Instance: /Maquina_de_estado_TP2_vlg_vec_tst/tb_out
