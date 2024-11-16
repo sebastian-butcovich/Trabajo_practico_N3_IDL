@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY Trabajo_practico_03_Entrada_in
+set_global_assignment -name TOP_LEVEL_ENTITY Maquina_de_estados_V2_TP3
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:10:17  SEPTEMBER 15, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1

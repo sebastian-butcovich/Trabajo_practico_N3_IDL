@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diseño Registro.md",
+                "file": "Maquina de estados.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Diseño Registro"
+              "title": "Maquina de estados"
             }
           }
         ],
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diseño Registro.md",
+                "file": "Maquina de estados.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Diseño Registro"
+              "title": "Enlaces entrantes de Maquina de estados"
             }
           },
           {
@@ -127,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diseño Registro.md",
+                "file": "Maquina de estados.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Diseño Registro"
+              "title": "Enlaces salientes de Maquina de estados"
             }
           },
           {
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diseño Registro.md"
+                "file": "Maquina de estados.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de Diseño Registro"
+              "title": "Esquema de Maquina de estados"
             }
           }
         ]
@@ -177,13 +177,16 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "086e601c52acb138",
+  "active": "b19f0a936b1ec670",
   "lastOpenFiles": [
+    "Pasted image 20241116203515.png",
+    "Pasted image 20241116203404.png",
+    "Maquina de estados.canvas",
+    "Diseño Registro.md",
     "Imágenes/Pasted image 20241116201307.png",
     "Imágenes/Pasted image 20241116201200.png",
     "Maquina de estados.md",
     "Imágenes",
-    "Resumen del enunciado.md",
-    "Diseño Registro.md"
+    "Resumen del enunciado.md"
   ]
 }

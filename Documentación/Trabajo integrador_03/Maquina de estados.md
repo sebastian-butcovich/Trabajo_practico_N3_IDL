@@ -17,3 +17,10 @@
 - ![[Pasted image 20241116193640.png]]
 - ### Resultado después de operar 
 - ![[Pasted image 20241116193845.png]]
+- ## Segundo boceto 
+- En este boceto se pudo corregir un efecto en el primer diseño.
+- El defecto que se generaba es que estando en el primer estado ya se disponía a cargar el registro, como el cambio de estado se produce con un ciclo positivo de reloj, el primer estado solo contaba con medio ciclo de reloj 
+- El segundo diseño agrega un flip-flop más lo que permite obtener más estados para configurar 
+- ![[Pasted image 20241116203404.png]]
+- ### Resultado del diseño 
+- ![[Pasted image 20241116203515.png]]
