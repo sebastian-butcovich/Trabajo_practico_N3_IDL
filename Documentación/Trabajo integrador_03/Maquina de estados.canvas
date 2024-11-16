@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"d66c9b76b6abdec8","x":-600,"y":-680,"width":740,"height":280,"type":"text","text":"# Descripción general \n- La maquina de estados esta compuesta por 3 bits, y tiene 5 estados \n\t- **0000:** Estado para comenzar \n\t- **0001:** Estado para cargar el registro 1\n\t- **0010:** Estado para cargar el registro 2\n\t- **0011:** Estado para cargar el registro 3\n\t- **0100:** Estado de fin "},
+		{"id":"83905b9e3f253845","x":-500,"y":-200,"width":600,"height":260,"type":"text","text":"# Estado 0000\n- **Start:** 0 \n- **End:** 0\n- **R1:** 0\n- **R2:** 0\n- **R3:** 0"},
+		{"id":"a31d7259fdaa84f4","x":378,"y":-200,"width":402,"height":260,"type":"text","text":"# Estado 0001\n- **Start:** 1 \n- **End:** 0\n- **R1:** 1\n- **R2:** 0\n- **R3:** 0"},
+		{"id":"a58c15f8ce1df07f","x":378,"y":260,"width":402,"height":260,"type":"text","text":"# Estado 0010\n- **Start:** 1 \n- **End:** 0\n- **R1:** 0\n- **R2:** 1\n- **R3:** 0"},
+		{"id":"320095f0340652cd","x":378,"y":660,"width":402,"height":260,"type":"text","text":"# Estado 0011\n- **Start:** 1 \n- **End:** 0\n- **R1:** 0\n- **R2:** 0\n- **R3:** 1"},
+		{"id":"18a376004b19c22a","x":-420,"y":660,"width":398,"height":260,"type":"text","text":"# Estado 0100\n- **Start:** 0 \n- **End:** 1\n- **R1:** 0\n- **R2:** 0\n- **R3:** 0"}
+	],
+	"edges":[
+		{"id":"49501a395f9c81e8","fromNode":"83905b9e3f253845","fromSide":"right","toNode":"a31d7259fdaa84f4","toSide":"left"},
+		{"id":"3f167aee95aa259a","fromNode":"a31d7259fdaa84f4","fromSide":"bottom","toNode":"a58c15f8ce1df07f","toSide":"top"},
+		{"id":"3faca103d20b8733","fromNode":"a58c15f8ce1df07f","fromSide":"bottom","toNode":"320095f0340652cd","toSide":"top"},
+		{"id":"a05c686a9bccb0fb","fromNode":"320095f0340652cd","fromSide":"left","toNode":"18a376004b19c22a","toSide":"right"}
+	]
+}

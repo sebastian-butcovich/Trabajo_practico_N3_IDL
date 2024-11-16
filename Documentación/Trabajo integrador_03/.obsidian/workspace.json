@@ -1,0 +1,189 @@
+{
+  "main": {
+    "id": "68e80fdd24ef1393",
+    "type": "split",
+    "children": [
+      {
+        "id": "261e79e9f2eea32f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "467bfd65bfe19ab7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maquina de estados.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Maquina de estados"
+            }
+          },
+          {
+            "id": "b19f0a936b1ec670",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Diseño Registro.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Diseño Registro"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bc2282b3f494cd9e",
+    "type": "split",
+    "children": [
+      {
+        "id": "e5b0465b02ba1535",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "086e601c52acb138",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "fb786d5b2debaaea",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "d0a53130125e5094",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c23166041c751cc2",
+    "type": "split",
+    "children": [
+      {
+        "id": "18ff1d6574c3c0f8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c628484e5028b037",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Diseño Registro.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Diseño Registro"
+            }
+          },
+          {
+            "id": "ce995a9bb0f2d4b6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Diseño Registro.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Diseño Registro"
+            }
+          },
+          {
+            "id": "0bc7debc193a8006",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "09464c7d2e6f4a43",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Diseño Registro.md"
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Diseño Registro"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "086e601c52acb138",
+  "lastOpenFiles": [
+    "Imágenes/Pasted image 20241116201307.png",
+    "Imágenes/Pasted image 20241116201200.png",
+    "Maquina de estados.md",
+    "Imágenes",
+    "Resumen del enunciado.md",
+    "Diseño Registro.md"
+  ]
+}
