@@ -1,0 +1,33 @@
+### anotaciones generales sobre el quartus 2 
+- **Buses:** Se puede utilizar un solo input para definir un número grande de entradas, para eso solo se le tiene que poner dentro del nombre del pin de entrada, el nombre del pin y entre corchetes el número de bits o de entradas
+	- **Ejemplo:** ![[Pasted image 20241009194629.png]]
+		- En la imagen se puede apreciar que tanto el pin de entrada como el valor de entrada del componente tiene el mismo nombre
+### Señales 
+- #### Señales del registro
+	- **ROE (Register Output Enable):** Esta señal sirve para que el registro envíe información que tiene almacenada (entrada)
+	- **RLE (Register Latch Enable):** Latch Enable ?? No se que quiere decir (entrada) 
+- ### Señales del dispositivo a diseñar
+	- **ROE:** definido previamente (salida)
+	- **RLE:** definido previamente (salida)
+	- **CE1M2:** El chip esta activado en la memoria 2
+	- **CE1M1:**  El chip está activado en la memoria 1
+	- **CE2M2:** Segundo método para activar la memoria 2
+	- **CE2M1:** Segundo método para activar la memoria 2
+	- **WEM2:** Que la memoria 2 este en modo escritura
+	- **WEM1:** Que la memoria 1 este en modo escritura
+	- **OEM2:** Que la memoria 2 este en modo salida
+	- **OEM1:** Que la memoria 1 este en modo salida
+	- **LOAD:** Indica el principio de funcionamiento del sistema de control 
+	- **IN:** Interfaz de 16 bits por donde se provee los datos
+		- **BOA: Base Origin Address:** dirección base origen (15 bits)
+		- **BDA: Base Destination Address:** Dirección base destino (15bits)
+		- **Cantidad de datos a transferir y Sentido de transferencia:**
+	- **CK:**
+	- **Start:**
+	- **End:**
+- ### Funcionamiento:
+	- Los datos anteriores deben leerse en tres ciclos sucesivos de reloj, a partir de la activación en ALTO de la entrada LOAD.
+	- El sistema debe generar las señales necesarias y con el timing adecuado para realizar la transferencia a partir del momento en que la señal Start se ponga en alto, y cuando finalice debe poner la señal End en Alto.
+	- Dirección donde comienzan los datos de origen (BOA: Base Origin Address -- dirección base de origen). hasta 15 bits ubicados en los LSB de IN Dirección donde comenzará el destino de los datos 
+	- (BDA: Base Destination Address -- Direccion de Base de Destino). hasta 15 bits ubicados en los LSB de IN 
+	- Cantidad de Datos a Transferir y Sentido de la transferencia: hasta 5 bits ubicados en los LSB de IN (1 a 32) y el sentido de la transferencia es de memoria 1 a memoria 2 ubicando un 1 en el MSB de IN o de memoria 2 a memoria 1 ubicando un 0 en el MSB de IN.

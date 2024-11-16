@@ -1,0 +1,396 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/16/2024 19:42:54"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Maquina_de_estados_V2_TP3
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Maquina_de_estados_V2_TP3_vlg_sample_tst(
+	clock,
+	sampler_tx
+);
+input  clock;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clock)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Maquina_de_estados_V2_TP3_vlg_check_tst (
+	END,
+	Q0,
+	Q1,
+	Q2,
+	R1,
+	R2,
+	R3,
+	START,
+	sampler_rx
+);
+input  END;
+input  Q0;
+input  Q1;
+input  Q2;
+input  R1;
+input  R2;
+input  R3;
+input  START;
+input sampler_rx;
+
+reg  END_expected;
+reg  Q0_expected;
+reg  Q1_expected;
+reg  Q2_expected;
+reg  R1_expected;
+reg  R2_expected;
+reg  R3_expected;
+reg  START_expected;
+
+reg  END_prev;
+reg  Q0_prev;
+reg  Q1_prev;
+reg  Q2_prev;
+reg  R1_prev;
+reg  R2_prev;
+reg  R3_prev;
+reg  START_prev;
+
+reg  END_expected_prev;
+reg  Q0_expected_prev;
+reg  Q1_expected_prev;
+reg  Q2_expected_prev;
+reg  R1_expected_prev;
+reg  R2_expected_prev;
+reg  R3_expected_prev;
+reg  START_expected_prev;
+
+reg  last_END_exp;
+reg  last_Q0_exp;
+reg  last_Q1_exp;
+reg  last_Q2_exp;
+reg  last_R1_exp;
+reg  last_R2_exp;
+reg  last_R3_exp;
+reg  last_START_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:8] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 8'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	END_prev = END;
+	Q0_prev = Q0;
+	Q1_prev = Q1;
+	Q2_prev = Q2;
+	R1_prev = R1;
+	R2_prev = R2;
+	R3_prev = R3;
+	START_prev = START;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	END_expected_prev = END_expected;
+	Q0_expected_prev = Q0_expected;
+	Q1_expected_prev = Q1_expected;
+	Q2_expected_prev = Q2_expected;
+	R1_expected_prev = R1_expected;
+	R2_expected_prev = R2_expected;
+	R3_expected_prev = R3_expected;
+	START_expected_prev = START_expected;
+end
+
+
+
+// expected END
+initial
+begin
+	END_expected = 1'b0;
+end 
+
+// expected R1
+initial
+begin
+	R1_expected = 1'bX;
+end 
+
+// expected R2
+initial
+begin
+	R2_expected = 1'bX;
+end 
+
+// expected R3
+initial
+begin
+	R3_expected = 1'bX;
+end 
+
+// expected START
+initial
+begin
+	START_expected = 1'bX;
+end 
+
+// expected Q0
+initial
+begin
+	Q0_expected = 1'bX;
+end 
+
+// expected Q1
+initial
+begin
+	Q1_expected = 1'bX;
+end 
+
+// expected Q2
+initial
+begin
+	Q2_expected = 1'bX;
+end 
+// generate trigger
+always @(END_expected or END or Q0_expected or Q0 or Q1_expected or Q1 or Q2_expected or Q2 or R1_expected or R1 or R2_expected or R2 or R3_expected or R3 or START_expected or START)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected END = %b | expected Q0 = %b | expected Q1 = %b | expected Q2 = %b | expected R1 = %b | expected R2 = %b | expected R3 = %b | expected START = %b | ",END_expected_prev,Q0_expected_prev,Q1_expected_prev,Q2_expected_prev,R1_expected_prev,R2_expected_prev,R3_expected_prev,START_expected_prev);
+	$display("| real END = %b | real Q0 = %b | real Q1 = %b | real Q2 = %b | real R1 = %b | real R2 = %b | real R3 = %b | real START = %b | ",END_prev,Q0_prev,Q1_prev,Q2_prev,R1_prev,R2_prev,R3_prev,START_prev);
+`endif
+	if (
+		( END_expected_prev !== 1'bx ) && ( END_prev !== END_expected_prev )
+		&& ((END_expected_prev !== last_END_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port END :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", END_expected_prev);
+		$display ("     Real value = %b", END_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_END_exp = END_expected_prev;
+	end
+	if (
+		( Q0_expected_prev !== 1'bx ) && ( Q0_prev !== Q0_expected_prev )
+		&& ((Q0_expected_prev !== last_Q0_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q0_expected_prev);
+		$display ("     Real value = %b", Q0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Q0_exp = Q0_expected_prev;
+	end
+	if (
+		( Q1_expected_prev !== 1'bx ) && ( Q1_prev !== Q1_expected_prev )
+		&& ((Q1_expected_prev !== last_Q1_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q1_expected_prev);
+		$display ("     Real value = %b", Q1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_Q1_exp = Q1_expected_prev;
+	end
+	if (
+		( Q2_expected_prev !== 1'bx ) && ( Q2_prev !== Q2_expected_prev )
+		&& ((Q2_expected_prev !== last_Q2_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q2_expected_prev);
+		$display ("     Real value = %b", Q2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_Q2_exp = Q2_expected_prev;
+	end
+	if (
+		( R1_expected_prev !== 1'bx ) && ( R1_prev !== R1_expected_prev )
+		&& ((R1_expected_prev !== last_R1_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port R1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", R1_expected_prev);
+		$display ("     Real value = %b", R1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_R1_exp = R1_expected_prev;
+	end
+	if (
+		( R2_expected_prev !== 1'bx ) && ( R2_prev !== R2_expected_prev )
+		&& ((R2_expected_prev !== last_R2_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port R2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", R2_expected_prev);
+		$display ("     Real value = %b", R2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_R2_exp = R2_expected_prev;
+	end
+	if (
+		( R3_expected_prev !== 1'bx ) && ( R3_prev !== R3_expected_prev )
+		&& ((R3_expected_prev !== last_R3_exp) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port R3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", R3_expected_prev);
+		$display ("     Real value = %b", R3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_R3_exp = R3_expected_prev;
+	end
+	if (
+		( START_expected_prev !== 1'bx ) && ( START_prev !== START_expected_prev )
+		&& ((START_expected_prev !== last_START_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port START :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", START_expected_prev);
+		$display ("     Real value = %b", START_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_START_exp = START_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module Maquina_de_estados_V2_TP3_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clock;
+// wires                                               
+wire END;
+wire Q0;
+wire Q1;
+wire Q2;
+wire R1;
+wire R2;
+wire R3;
+wire START;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Maquina_de_estados_V2_TP3 i1 (
+// port map - connection between master ports and signals/registers   
+	.clock(clock),
+	.\END (END),
+	.Q0(Q0),
+	.Q1(Q1),
+	.Q2(Q2),
+	.R1(R1),
+	.R2(R2),
+	.R3(R3),
+	.START(START)
+);
+
+// clock
+always
+begin
+	clock = 1'b0;
+	clock = #50000 1'b1;
+	#50000;
+end 
+
+Maquina_de_estados_V2_TP3_vlg_sample_tst tb_sample (
+	.clock(clock),
+	.sampler_tx(sampler)
+);
+
+Maquina_de_estados_V2_TP3_vlg_check_tst tb_out(
+	.END(END),
+	.Q0(Q0),
+	.Q1(Q1),
+	.Q2(Q2),
+	.R1(R1),
+	.R2(R2),
+	.R3(R3),
+	.START(START),
+	.sampler_rx(sampler)
+);
+endmodule
+

@@ -1,0 +1,12 @@
+- Es el propósito de este  documento es dejar constancia de que elemento de diseño y con que propósito, cuales fueron sus pasos y porque se tomaron ciertas decisiones 
+- El registro es una unidad de hardware informática que permite almacenar información ( un elemento simple de memoria )
+- El objetivo de este diseño de registro es el de almacenar 16 bits que llegaran desde la entrada IN del dispositivo que se está diseñando 
+- **Diseño:**
+- ![[Pasted image 20241116201200.png]]
+	- Esta compuesto por 
+		- 16 entradas númeradas del 0 al 15
+		- 16 salidas numeradas del 0 al 15
+		- 16 Filp-flop tipo D 
+		- Un entrada CLK
+- **Resultado:**
+- ![[Pasted image 20241116201307.png]]

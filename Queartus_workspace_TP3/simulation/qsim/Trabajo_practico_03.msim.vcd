@@ -1,0 +1,267 @@
+$comment
+	File created using the following command:
+		vcd file Trabajo_practico_03.msim.vcd -direction
+$end
+$date
+	Sat Nov 16 19:44:30 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Trabajo_practico_03_Entrada_in_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var reg 1 " P0 $end
+$var reg 1 # P1 $end
+$var reg 1 $ P2 $end
+$var reg 1 % P3 $end
+$var reg 1 & P4 $end
+$var reg 1 ' P5 $end
+$var reg 1 ( P6 $end
+$var reg 1 ) P7 $end
+$var reg 1 * P8 $end
+$var reg 1 + P9 $end
+$var reg 1 , P10 $end
+$var reg 1 - P11 $end
+$var reg 1 . P12 $end
+$var reg 1 / P13 $end
+$var reg 1 0 P14 $end
+$var reg 1 1 P15 $end
+$var wire 1 2 S0 $end
+$var wire 1 3 S1 $end
+$var wire 1 4 S2 $end
+$var wire 1 5 S3 $end
+$var wire 1 6 S4 $end
+$var wire 1 7 S5 $end
+$var wire 1 8 S6 $end
+$var wire 1 9 S7 $end
+$var wire 1 : S8 $end
+$var wire 1 ; S9 $end
+$var wire 1 < S10 $end
+$var wire 1 = S11 $end
+$var wire 1 > S12 $end
+$var wire 1 ? S13 $end
+$var wire 1 @ S14 $end
+$var wire 1 A S15 $end
+$var wire 1 B sampler $end
+$scope module i1 $end
+$var wire 1 C gnd $end
+$var wire 1 D vcc $end
+$var wire 1 E unknown $end
+$var tri1 1 F devclrn $end
+$var tri1 1 G devpor $end
+$var tri1 1 H devoe $end
+$var wire 1 I S8~output_o $end
+$var wire 1 J S9~output_o $end
+$var wire 1 K S10~output_o $end
+$var wire 1 L S11~output_o $end
+$var wire 1 M S12~output_o $end
+$var wire 1 N S13~output_o $end
+$var wire 1 O S14~output_o $end
+$var wire 1 P S15~output_o $end
+$var wire 1 Q S7~output_o $end
+$var wire 1 R S6~output_o $end
+$var wire 1 S S5~output_o $end
+$var wire 1 T S4~output_o $end
+$var wire 1 U S3~output_o $end
+$var wire 1 V S2~output_o $end
+$var wire 1 W S1~output_o $end
+$var wire 1 X S0~output_o $end
+$var wire 1 Y CLK~input_o $end
+$var wire 1 Z CLK~inputclkctrl_outclk $end
+$var wire 1 [ P8~input_o $end
+$var wire 1 \ inst9~feeder_combout $end
+$var wire 1 ] inst9~q $end
+$var wire 1 ^ P9~input_o $end
+$var wire 1 _ inst8~feeder_combout $end
+$var wire 1 ` inst8~q $end
+$var wire 1 a P10~input_o $end
+$var wire 1 b inst7~feeder_combout $end
+$var wire 1 c inst7~q $end
+$var wire 1 d P11~input_o $end
+$var wire 1 e inst6~q $end
+$var wire 1 f P12~input_o $end
+$var wire 1 g inst5~feeder_combout $end
+$var wire 1 h inst5~q $end
+$var wire 1 i P13~input_o $end
+$var wire 1 j inst4~feeder_combout $end
+$var wire 1 k inst4~q $end
+$var wire 1 l P14~input_o $end
+$var wire 1 m inst3~feeder_combout $end
+$var wire 1 n inst3~q $end
+$var wire 1 o P15~input_o $end
+$var wire 1 p inst~q $end
+$var wire 1 q P7~input_o $end
+$var wire 1 r inst10~feeder_combout $end
+$var wire 1 s inst10~q $end
+$var wire 1 t P6~input_o $end
+$var wire 1 u inst11~feeder_combout $end
+$var wire 1 v inst11~q $end
+$var wire 1 w P5~input_o $end
+$var wire 1 x inst12~feeder_combout $end
+$var wire 1 y inst12~q $end
+$var wire 1 z P4~input_o $end
+$var wire 1 { inst13~feeder_combout $end
+$var wire 1 | inst13~q $end
+$var wire 1 } P3~input_o $end
+$var wire 1 ~ inst14~feeder_combout $end
+$var wire 1 !! inst14~q $end
+$var wire 1 "! P2~input_o $end
+$var wire 1 #! inst15~feeder_combout $end
+$var wire 1 $! inst15~q $end
+$var wire 1 %! P1~input_o $end
+$var wire 1 &! inst16~feeder_combout $end
+$var wire 1 '! inst16~q $end
+$var wire 1 (! P0~input_o $end
+$var wire 1 )! inst17~q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+1$
+0%
+1&
+0'
+1(
+0)
+1*
+0+
+1,
+0-
+1.
+0/
+10
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+xB
+0C
+1D
+xE
+1F
+1G
+1H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+1[
+1\
+0]
+0^
+0_
+0`
+1a
+1b
+0c
+0d
+0e
+1f
+1g
+0h
+0i
+0j
+0k
+1l
+1m
+0n
+0o
+0p
+0q
+0r
+0s
+1t
+1u
+0v
+0w
+0x
+0y
+1z
+1{
+0|
+0}
+0~
+0!!
+1"!
+1#!
+0$!
+0%!
+0&!
+0'!
+1(!
+0)!
+$end
+#299500
+1!
+1Y
+1Z
+0B
+1)!
+1$!
+1|
+1v
+1n
+1h
+1c
+1]
+1X
+1V
+1T
+1R
+1O
+1M
+1K
+1I
+12
+14
+16
+18
+1@
+1>
+1<
+1:
+#599000
+0!
+0Y
+0Z
+1B
+#898500
+1!
+1Y
+1Z
+0B
+#1000000
